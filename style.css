@@ -1,3 +1,7 @@
+html {
+    font-size: min(max(1rem, 4vw), 22px);
+  }
+
 main {
     display: flex;
     flex-direction: column;
@@ -24,8 +28,12 @@ main {
 }
 
 #heading h1 {
-    font-size: large;
-    font-size: 60px;
+    
+    --minFontSize: 32px;
+    --maxFontSize: 200px;
+    --scaler: 10vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+
     margin-bottom: 0%;
 }
 
@@ -72,9 +80,18 @@ img {
 
 .biographytext {
     align-self: center;
+
+    --minFontSize: 10px;
+    --maxFontSize: 80px;
+    --scaler: 5vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
 #quote {
     font-style: italic;
-    font-size: 20px;
+
+
+text-align: center;
+
+    padding: 0px 10px 0px 20px;
 }
