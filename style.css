@@ -82,7 +82,7 @@ img {
     align-self: center;
 
     --minFontSize: 10px;
-    --maxFontSize: 80px;
+    --maxFontSize: 60px;
     --scaler: 5vw;
     font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
