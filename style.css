@@ -43,9 +43,18 @@ main {
     font-weight: bold;
 }
 
+.album {
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0%;
+}
+
 li {
     margin-bottom: 20px;
-    
+    align-self: flex-start;
 }
 
 img {
@@ -53,4 +62,19 @@ img {
     height: auto;
     max-width: 100%;
     max-height: 70vh;
+}
+
+#biography {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+
+.biographytext {
+    align-self: center;
+}
+
+#quote {
+    font-style: italic;
+    font-size: 20px;
 }
