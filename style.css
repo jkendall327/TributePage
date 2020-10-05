@@ -1,6 +1,6 @@
 html {
     font-size: min(max(1rem, 4vw), 22px);
-  }
+}
 
 main {
     display: flex;
@@ -8,6 +8,23 @@ main {
     align-items: center;
 
     background-color: #eeeeee;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0%;
+}
+
+li {
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 70vh;
 }
 
 #imagebox {
@@ -28,11 +45,11 @@ main {
 }
 
 #heading h1 {
-    
+
     --minFontSize: 32px;
     --maxFontSize: 200px;
     --scaler: 10vw;
-    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+    font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
 
     margin-bottom: 0%;
 }
@@ -47,6 +64,20 @@ main {
     font-style: italic;
 }
 
+#biography {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+
+#quote {
+    font-style: italic;
+
+    text-align: center;
+
+    padding: 0px 10px 0px 20px;
+}
+
 .year {
     font-weight: bold;
 }
@@ -55,43 +86,11 @@ main {
     font-style: italic;
 }
 
-ul {
-    list-style: none;
-    margin-bottom: 0%;
-}
-
-li {
-    margin-bottom: 20px;
-    align-self: flex-start;
-}
-
-img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 70vh;
-}
-
-#biography {
-    display: flex;
-    flex-direction: column;
-    font-family: Roboto, 'Times New Roman', Times, serif;
-}
-
 .biographytext {
     align-self: center;
 
     --minFontSize: 10px;
     --maxFontSize: 60px;
     --scaler: 5vw;
-    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
-}
-
-#quote {
-    font-style: italic;
-
-
-text-align: center;
-
-    padding: 0px 10px 0px 20px;
+    font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
 }
